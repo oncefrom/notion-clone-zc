@@ -16,7 +16,6 @@ const NavigationPage = () => {
     const pathname = usePathname();
     const isMobile = useMediaQuery("(max-width: 768px)");
 
-    const documents = useQuery(api.documents.get);
     const create = useMutation(api.documents.create);
 
     const isResizingRef = useRef(false);
